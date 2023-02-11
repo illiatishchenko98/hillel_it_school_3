@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization</title>
+  </head>
+  <body>
+    <div>Authorization:</div>
+    <form action="https://fom.in.ua/echo" method="get">
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="your email address"
+      />
+      <input
+        type="password"
+        required
+        minlength="8"
+        name="password"
+        placeholder="your password"
+      />
+      <label for="remember_password">Remember your password</label>
+      <input type="checkbox" name="remember_password" checked />
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>

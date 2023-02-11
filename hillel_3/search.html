@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <body>
+    <div>Пошук:</div>
+    <form action="https://fom.in.ua/echo" method="get">
+      <input
+        type="text"
+        required
+        placeholder="Тип кузова."
+        name="Тип кузова."
+      />
+      <p>
+        <input
+          type="text"
+          required
+          placeholder="Марка авто."
+          name="Марка авто."
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          required
+          placeholder="Країна виробник."
+          name="Країна виробник."
+        />
+      </p>
+      <p>
+        <input
+          list="price_range"
+          placeholder="Ціна (від і до)."
+          required
+          name="Ціна (від і до)."
+        />
+        <datalist id="price_range">
+          <option value="від 1000 до 5000"></option>
+          <option value="від 5000 до 10000"></option>
+          <option value="від 10000 до 100000"></option>
+        </datalist>
+      </p>
+      <p>
+        <input
+          list="year_range"
+          required
+          placeholder="Рік випуску (від і до)."
+          name="Рік випуску (від і до)."
+        />
+        <datalist id="year_range">
+          <option value="до 2000"></option>
+          <option value="від 2000 до 2022"></option>
+        </datalist>
+      </p>
+      <p>
+        <label for="chbox" name="Бити">Бити</label>
+        <input type="checkbox" id="chbox" name="Бити" />
+        <label for="chbox2" name="У кредиті">У кредиті</label>
+        <input type="checkbox" id="chbox2" name="У кредиті" />
+        <label for="chbox3" name="Нерозмитнена">Нерозмитнена</label>
+        <input type="checkbox" id="chbox3" name="Нерозмитнена" />
+      </p>
+      <p>
+        <input
+          type="text"
+          required
+          placeholder="Тип палива."
+          name="Тип палива."
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          required
+          placeholder="Тип коробки передач."
+          name="Тип коробки передач."
+        />
+      </p>
+      <p><input type="text" required placeholder="Колір." name="Колір." /></p>
+      <p>
+        <label for="comfort" name="Комфорт">Люк</label>
+        <input type="checkbox" name="Комфорт" id="comfort" />
+        <label for="comfort2" name="Комфорт">Шкіряний салон</label>
+        <input type="checkbox" name="Комфорт" id="comfort2" />
+        <input type="text" placeholder="Інші варінати" name="Комфорт" />
+      </p>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
